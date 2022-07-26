@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/BoxOne"
+        style="@style/WhtieBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginWidee"
+        android:layout_marginTop="@dimen/marginWidee"
+        android:layout_marginEnd="@dimen/marginWidee"
+        android:text="@string/boxOneText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_marginBaseline="@dimen/marginWidee" />
+
+    <TextView
+        android:id="@+id/BoxTwo"
+        style="@style/WhtieBox"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="@string/boxTwoTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BoxOne"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/BoxThree"
+        style="@style/WhtieBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/boxThreeTxt"
+        android:layout_marginStart="@dimen/marginWidee"
+        android:layout_marginEnd="@dimen/marginWidee"
+        app:layout_constraintBottom_toTopOf="@+id/BoxFour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/BoxTwo"
+        app:layout_constraintTop_toTopOf="@+id/BoxTwo" />
+
+    <TextView
+        android:id="@+id/BoxFour"
+        style="@style/WhtieBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/BoxFourTxt"
+        android:layout_marginStart="@dimen/marginWidee"
+        android:layout_marginEnd="@dimen/marginWidee"
+        android:layout_marginTop="@dimen/marginWidee"
+        android:layout_marginBottom="@dimen/marginWidee"
+        app:layout_constraintBottom_toTopOf="@+id/BoxFive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/BoxTwo"
+        app:layout_constraintTop_toBottomOf="@+id/BoxThree" />
+
+    <TextView
+        android:id="@+id/BoxFive"
+        style="@style/WhtieBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/BoxFiveTxt"
+        android:layout_marginStart="@dimen/marginWidee"
+        android:layout_marginEnd="@dimen/marginWidee"
+        app:layout_constraintBottom_toBottomOf="@+id/BoxTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/BoxTwo"
+        app:layout_constraintTop_toBottomOf="@+id/BoxFour" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
